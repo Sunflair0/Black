@@ -1,0 +1,74 @@
+.flashy {
+    display: flex;
+    border-bottom: 2px solid $secondary-accent-color;
+    border-top: white 2 solid;
+    outline: black 1px solid;
+    line-height: 2;
+    padding: 0 15px;
+    font-size: 1rem;
+    color: $primary-accent-color;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: blue;
+    background-image: linear-gradient( to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 300;
+}
+.start {
+    float: right;
+    margin: -7vh 2vh 0 0;
+    justify-content: center;
+    display: flex;
+}
+#btnHit,
+#btnStay {
+    width: 50px;
+    margin-top: -100vh;
+    margin-right: -120%;
+    margin-bottom: 104vh;
+    border-radius: 50%;
+    font-size: .9rem;
+      
+        &:hover {
+        background-color: yellow;
+        color: black;
+        cursor: pointer;
+        border-top: rgb(0, 0, 0) 2 solid;
+    }
+        &:active {
+        background-color: yellowgreen;
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    }
+}
+#btnStay {
+    background-color: red;
+}
+.btnPlay {
+    background-color: blue;
+}
+#btnPlay{
+    visibility: hidden;
+    transition: all .1ms ease-in;
+
+        &:hover {
+        background-color: yellowgreen;
+        color: black;
+    }
+        &:active {
+        background-color: orange;
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    }
+    &:focus {
+        outline:none ;
+        }
+}
+.hitstay {
+    margin-top: 25vh;
+    width: 45%;
+    visibility: hidden;  
+}

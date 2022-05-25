@@ -1,0 +1,22 @@
+{
+  "name": "bjish",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass"
+  },
+  "repository": {
+  "type": "git", 
+  "url": "git+https://github.com/Sunflair0/BJish.git"
+  },
+  "author": "Rhonda Warner",
+  "license": "ISC",
+  "bugs": { 
+  "url": "git+https://github.com/Sunflair0/BJish/issues"
+  },
+  "homepage": "https://github.com/Sunflair0/BJish#readme",
+  "dependencies":{
+    "sass": "^1.43.4"
+  }
+}

@@ -1,0 +1,60 @@
+#feedbackbar {
+    font-family: 'Lora','Gill Sans', 'Gill Sans MT', sans-serif, regular;
+    letter-spacing: -.05rem;
+    visibility: visible;
+    margin: 6vh 14% 0 14%;
+    text-align: center;
+    background: $primary-color;
+    padding: 10px;
+    border-radius: 5px;
+    border: double 5px;
+    height: auto;    
+    font-size: 2.5vh;
+    z-index: 300; 
+    overflow: -moz-hidden-unscrollable;     
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+#feedbackbutton::-webkit-scrollbar 
+{
+    display: none;
+}
+#bday {   
+    padding-left: 10px;   
+}
+#birthday__input 
+{
+    visibility: hidden;
+    border: 1px solid $primary-color;
+    margin: .3vh auto -6vh;
+    
+    z-index: 100;
+}
+#date {
+    background: #0084ff;
+    border: none;
+    padding: auto;
+    cursor: pointer;
+    color: $secondary-accent-color;
+}
+form 
+{
+    height: 6vh;
+    display: flex;
+    flex-direction: row;    
+    padding: 2px;
+    
+}
+input 
+{
+    z-index: 200;
+    width: 50%;
+    border: none;
+    font-size: 1rem;
+
+        &:focus {
+        outline:none ;
+    }
+}

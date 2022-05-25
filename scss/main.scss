@@ -1,0 +1,63 @@
+@import 'config';
+@import 'cards';
+@import 'curator';
+@import 'dialog';
+@import 'score';
+@import 'themes';
+@import 'buttons';
+@import 'responsive';
+@import 'canvas';
+
+table {   
+    width: 100%;
+    margin-top: 5vh; 
+}
+  .deck__cards--back {
+   opacity: 0;
+   position: absolute;
+   margin-top: 6vh;
+    
+    &:checked + .label__choice {
+        outline-offset: 1px;
+        outline: 3px solid gold;    
+    }
+}
+.label__choice{
+    margin-top: 5vh;
+    display: flex;   
+}
+#deck__line {
+    top: 5vh;
+    visibility: hidden; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 195px;
+    gap: 16px;
+    margin: auto;    
+   }
+ .title 
+ {
+    letter-spacing: .1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 
+            2px 3px 5px #fa622f,
+            -1px 1px 1px #74321d, 
+            1.6px -1.4px 0 #ffffff,
+            2px 2px 4px rgb(0, 0, 0);
+    font-variant: small-caps;
+    font-family: "Rye", Courier, monospace, regular;
+       }
+.lowercase {
+    font-variant: normal;
+}
+ aside {
+    margin-top: 2vh;
+    width: 100%;    
+}
+ section {
+    margin-top: -50%;
+    width: 100%;
+}
