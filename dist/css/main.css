@@ -1,6 +1,6 @@
 body {
   /* background-color: #1baf59; */
-  background-image: url(/dist/asset/BJboard.png);
+  background-image: url(../asset/BJboard.png);
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
