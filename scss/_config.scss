@@ -9,9 +9,9 @@ body
     overflow-y: scroll;
     overflow-x: hidden;
     position: relative;
-    background-size: cover;
+    background-size: contain;
     background-clip: content-box;
-    background-repeat: repeat space;
+    background-repeat: no-repeat;
     top: 0;
     bottom: 0;
 
