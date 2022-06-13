@@ -4,14 +4,14 @@ $secondary-accent-color:#222830;
 
 body
 {
-    background-color: #1b36af;
-    background-image: url(/dist/asset/BJboard.png);
+    background-color: #af6f1b;
+    background-image: url(../asset/BJboard.png);
     overflow-y: scroll;
-    overflow-x:hidden;
+    overflow-x: hidden;
     position: relative;
     background-size: cover;
     background-clip: content-box;
-    background-repeat: no-repeat;
+    background-repeat: repeat space;
     top: 0;
     bottom: 0;
 
