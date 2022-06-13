@@ -4,6 +4,9 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
+  background-size: cover;
+  background-clip: content-box;
+  background-repeat: no-repeat;
   top: 0;
   bottom: 0;
 }
