@@ -1,9 +1,8 @@
 $primary-color: rgb(218, 205, 165);
-$primary-accent-color:  #ffffff;
-$secondary-accent-color:#222830;
+$primary-accent-color: #ffffff;
+$secondary-accent-color: #222830;
 
-body
-{
+body {
     background-color: #c48c43;
     background-image: url(../asset/BJboard.png);
     overflow-y: scroll;
@@ -11,143 +10,151 @@ body
     position: relative;
     background-position: top;
     background-repeat: repeat-x;
-    & button 
-        {
-height: 30px;
-width:50px;
-border-radius: 12px;
-border: 1px solid black;
-font-weight: bold;
-z-index: 10;
-    font-size: .9rem;
-    color: $primary-accent-color;
-    text-shadow: 1px 1px 1px #000;
-    background-color: rgba(253, 103, 103, 0.9);
-    background-image: linear-gradient( to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 1), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-    margin: auto;
-    text-align: center;
-    justify-content: center;
 
-    &:hover {
-        background-color: rgba(248, 155, 155, 0.9);
-        cursor: pointer;
-        border-top: rgb(0, 0, 0) 2 solid;
-    }
+    & button {
+        height: 30px;
+        width: 50px;
+        border-radius: 12px;
+        border: 1px solid black;
+        font-weight: bold;
+        z-index: 10;
+        font-size: .9rem;
+        color: $primary-accent-color;
+        text-shadow: 1px 1px 1px #000;
+        background-color: rgba(253, 103, 103, 0.9);
+        background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 1), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: rgba(248, 155, 155, 0.9);
+            cursor: pointer;
+            border-top: rgb(0, 0, 0) 2 solid;
+        }
+
         &:active {
-        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+        }
     }
-}
-     &.dark {
-        & .curator 
-         {
-         background-color: $secondary-accent-color;
-             & #feedbackbar 
-                {
-             background-color: $secondary-accent-color;
-             color: $primary-color;
-                }
-         }
-        & .card-size img 
-         { 
-         box-shadow: 4px 4px 5px rgb(0, 0, 0);
-         } 
+
+    &.dark {
+        & .curator {
+            background-color: $secondary-accent-color;
+
+            & #feedbackbar {
+                background-color: $secondary-accent-color;
+                color: $primary-color;
+            }
+        }
+
+        & .card-size img {
+            box-shadow: 4px 4px 5px rgb(0, 0, 0);
+        }
+
         & #lose,
         #games,
         #win,
-        #tie, 
-        .scoreBox 
-         {
+        #tie,
+        .scoreBox {
             background: $secondary-accent-color;
             border: $primary-color 5px double;
             color: $primary-color;
-         }
+        }
+
         & #lose1,
         #games1,
         #win1,
-        #tie1
-         { 
+        #tie1 {
             background: radial-gradient(circle at 50% 7px, $primary-color 3.2%, $secondary-accent-color 0%);
             color: $primary-color;
-         }
-        & .title
-         {
-            text-shadow: 
-            2px 3px 5px #fa622f,
-            -1px 1px 1px #74321d, 
-            1.6px -1.4px 0 #ffcd44,
-            2px 2px 4px rgb(0, 0, 0);
-         }
+        }
+
+        & .title {
+            text-shadow:
+                2px 3px 5px #fa622f,
+                -1px 1px 1px #74321d,
+                1.6px -1.4px 0 #ffcd44,
+                2px 2px 4px rgb(0, 0, 0);
+        }
     }
-&::-webkit-scrollbar 
-    {
+
+    &::-webkit-scrollbar {
         width: 20px;
-    
-    &-track 
-        {
-        background: linear-gradient(0deg, $secondary-accent-color 50%,#af6f1b  50%);
-        }    
-    &-thumb 
-        {
-    background-color: #fd893c;
-    box-shadow: inset 0 0 15px $secondary-accent-color;
-    border-radius: 20px;
-    border: 1px solid $secondary-accent-color;
+
+        &-track {
+            background: linear-gradient(0deg, $secondary-accent-color 50%, #af6f1b 50%);
+        }
+
+        &-thumb {
+            background-color: #fd893c;
+            box-shadow: inset 0 0 15px $secondary-accent-color;
+            border-radius: 20px;
+            border: 1px solid $secondary-accent-color;
         }
     }
 }
-* 
-{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     transition: .2s linear;
 }
+
 @mixin transition {
     transition: all .5s ease-in-out;
 }
+
 @mixin media-xs {
     @media screen and (max-width: 540px) {
         @content;
     }
 }
+
 @mixin media-sm {
     @media screen and (min-width: 541px) {
         @content;
     }
 }
+
 @mixin media-md {
     @media screen and (min-width: 920px) {
         @content;
     }
 }
+
 @mixin media-nest {
     @media screen and (width: 1024px) and (height: 600px) {
         @content;
     }
 }
+
 @mixin media-lg {
     @media screen and (min-width: 1150px) {
         @content;
     }
 }
+
 @mixin media-xl {
     @media screen and (min-width: 1600px) {
         @content;
     }
 }
+
 @mixin scoreFlip {
-        background: rgb(224,195,101);
-        background: radial-gradient(circle at 50% 7px, rgb(0, 0, 0) 2.6%,rgba(224,195,101,1) 0%, rgba(214,210,173,1) 40%, rgb(172, 124, 41) 98%);
-        color: $secondary-accent-color;   
-        padding: 5px 5px 0px 5px;
-        border-radius: 5px;
-        border: double 5px;
-        margin: 0px;
-        text-align: center;
-        font-variant: small-caps;
-        font-family: 'Smokum','Veranda', sans-serif;
-        font-size: 20px;
-        font-weight: 600;  
-        height: 75%;      
+    background: rgb(224, 195, 101);
+    background: radial-gradient(circle at 50% 7px, rgb(0, 0, 0) 2.6%, rgba(224, 195, 101, 1) 0%, rgba(214, 210, 173, 1) 40%, rgb(172, 124, 41) 98%);
+    color: $secondary-accent-color;
+    padding: 5px 5px 0px 5px;
+    border-radius: 5px;
+    border: double 5px;
+    margin: 0px;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: 'Smokum', 'Veranda', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    height: 75%;
 }

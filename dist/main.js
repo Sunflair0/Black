@@ -524,7 +524,6 @@ function youWin() {
     document.getElementById("confetti").style.visibility = "visible";
     update();
     draw();
-
     setTimeout(()=>{document.getElementById("confetti").style.visibility = "hidden"}, 2700);        
 }
 
@@ -555,4 +554,9 @@ function done() {
     document.getElementById("btnPlay").style.visibility = "hidden";
     statusMessage(
         `Goodbye, ${userName}. I hope the weather is nice and you can enjoy it!\nGames Played: ${games}, Games Won: ${win}, Games Tied: ${tie}, Games Lost: ${lose}\n`);
+
+   let feedbackbtn = document.createElement("button");
+        feedbackbtn.innerText = "Continue Play";
+        feedbackbtn.addEventListener("click", start);
+        document.getElementById("feedbackbar").append(feedbackbtn);
 }
