@@ -48,7 +48,9 @@
                     <div id="feedbackbutton" autofocus>OK</div>
                 </div>
                 <form id="birthday__input">
-                    <input type="text" id="bday" placeholder="MM/DD/YYYY" />
+                    <input type="text" id="bday" placeholder="MM/DD/YYYY" 
+                     pattern="[0-1]{1}[0-9]{1}/[0-9]{2}/[0-9]{4}"   />
+
                     <input type="submit" id="date" onclick="verAge" label="submit" />
                 </form>
                 <div form class="deckChoice">
