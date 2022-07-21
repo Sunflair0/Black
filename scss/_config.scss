@@ -13,7 +13,7 @@ body {
 
     & button {
         height: 30px;
-        width: 50px;
+        width: auto;
         border-radius: 12px;
         border: 1px solid black;
         font-weight: bold;
@@ -26,7 +26,8 @@ body {
         box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 1), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
         margin: auto;
         text-align: center;
-        justify-content: center;
+        justify-content: center;       
+
 
         &:hover {
             background-color: rgba(248, 155, 155, 0.9);
