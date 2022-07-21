@@ -1,5 +1,5 @@
 body, html {
-  background-image: url("../asset/Bjboard.png");
+  background-image: url(/dist/asset/BJboard.png);
   background-repeat: repeat space;
   padding-bottom: 10px;
   margin-bottom: 5px;

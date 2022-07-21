@@ -74,6 +74,12 @@
         flex-direction: row;
         min-width: 450px;
     }
+    .card-size img {
+        margin: .80vh;
+        min-height: 120px;
+        min-width: 84px;
+        box-shadow: 4px 4px 5px black;
+    }
     .start {
         width: 150px;
         margin: -5vh 17vh 0 0;
@@ -134,15 +140,16 @@
 #deck__line{
     margin-top: 9vh;
 }
-.start {
-    width: 150px;
-    margin: -5vh 17vh 0 0;
-}
 .card-size img {
     margin: 1vh;
     min-height: 160px;
     min-width: 111px;
     box-shadow: 4px 4px 5px black;
+}
+
+.start {
+    width: 150px;
+    margin: -5vh 17vh 0 0;
 }
 .position {
         transform: translate(85vw,9vh);
