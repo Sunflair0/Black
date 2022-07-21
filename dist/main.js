@@ -556,7 +556,7 @@ function done() {
         `Goodbye, ${userName}. I hope the weather is nice and you can enjoy it!\nGames Played: ${games}, Games Won: ${win}, Games Tied: ${tie}, Games Lost: ${lose}\n`);
 
    let feedbackbtn = document.createElement("button");
-        feedbackbtn.innerText = "Continue Play";
+        feedbackbtn.innerText = "Play";
         feedbackbtn.addEventListener("click", start);
         document.getElementById("feedbackbar").append(feedbackbtn);
 }
