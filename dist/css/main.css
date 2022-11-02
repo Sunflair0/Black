@@ -183,7 +183,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .curator {
-  min-width: 100%;
+  width: 100%;
   height: 100vh;
   background-color: transparent;
   z-index: -1;
@@ -201,6 +201,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
   border: double 5px;
   height: auto;
+width: 100%;
   font-size: 2.5vh;
   z-index: 300;
   overflow: -moz-hidden-unscrollable;
