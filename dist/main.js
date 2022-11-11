@@ -119,7 +119,7 @@ function preStart() {
     playerHand = [];
     computerHand = [];
     document.getElementById("birthday__input").style.display = "none";
-    
+
 
     if (userName) {
         document.getElementById("btnPlay").style.visibility = "visible";
@@ -147,6 +147,7 @@ function start() {
     computerHand = [];
 
     statusMessage("");
+    document.querySelector('.feedbackbar').classList.add('bar_adjust');
     document.getElementById("deck__line").style.visibility = "hidden";
     document.getElementById("btnPlay").style.visibility = "hidden";
     document.getElementsByClassName("bouncer")[0].style.visibility = "hidden";
@@ -405,7 +406,7 @@ function compPlusOne() {
         games += 1;
 
         statusMessage(`You outsmarted a computer. Congrats!\nDealer has ${computerPoints}.\nYou have ${playerPoints}.\n`);
-        
+
         let feedbackbtn = document.createElement("button");
         feedbackbtn.innerText = "OK";
         feedbackbtn.addEventListener("click", reStart);
@@ -431,18 +432,18 @@ function compPlusOne() {
         feedbackbtn.innerText = "OK";
         feedbackbtn.addEventListener("click", reStart);
         document.getElementById("feedbackbar").append(feedbackbtn);
-        
+
     } else {
         win += 1;
         games += 1;
 
         statusMessage(`You win. Do your 'Dance of Triumph'.\n Dealer:  ${computerPoints}\nYou: ${playerPoints}\n`);
-       
+
         let feedbackbtn = document.createElement("button");
         feedbackbtn.innerText = "OK";
         feedbackbtn.addEventListener("click", reStart);
         document.getElementById("feedbackbar").append(feedbackbtn);
-         youWin();
+        youWin();
     }
 }
 
@@ -497,7 +498,7 @@ function compTurn() {
         games += 1;
 
         statusMessage(`The plan came together, ${userName}!\nDealer busts with: ${computerPoints}\nYou win with: ${playerPoints}\n`);
-       
+
         let feedbackbtn = document.createElement("button");
         feedbackbtn.innerText = "OK";
         feedbackbtn.addEventListener("click", reStart);
@@ -520,11 +521,11 @@ function compTurn() {
     }
 }
 
-function youWin() {    
+function youWin() {
     document.getElementById("confetti").style.visibility = "visible";
     update();
     draw();
-    setTimeout(()=>{document.getElementById("confetti").style.visibility = "hidden"}, 2700);        
+    setTimeout(() => { document.getElementById("confetti").style.visibility = "hidden" }, 2700);
 }
 
 function reStart() {
@@ -555,8 +556,8 @@ function done() {
     statusMessage(
         `Goodbye, ${userName}. I hope the weather is nice and you can enjoy it!\nGames Played: ${games}, Games Won: ${win}, Games Tied: ${tie}, Games Lost: ${lose}\n`);
 
-   let feedbackbtn = document.createElement("button");
-        feedbackbtn.innerText = "Continue Play";
-        feedbackbtn.addEventListener("click", start);
-        document.getElementById("feedbackbar").append(feedbackbtn);
+    let feedbackbtn = document.createElement("button");
+    feedbackbtn.innerText = "Continue Play";
+    feedbackbtn.addEventListener("click", start);
+    document.getElementById("feedbackbar").append(feedbackbtn);
 }

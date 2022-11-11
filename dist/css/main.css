@@ -7,7 +7,7 @@ html {
 body {
 
   background-color: #af6f1b;
-  background-image: url("../asset/Bjboard.png");
+  background-image: url("../asset/BJboard.png");
   background-repeat: repeat no-repeat;
   /* overflow-y: auto; */
   overflow: hidden;
@@ -258,8 +258,7 @@ aside {
   font-family: 'Lora', 'Gill Sans', 'Gill Sans MT', sans-serif, regular;
   letter-spacing: -.05rem;
   visibility: visible;
-  margin-top: 2vh;
-  margin-left: 12vw;
+  margin-top: 2vh;  
   text-align: center;
   background: #dacda5;
   padding: 10px;
@@ -269,6 +268,10 @@ aside {
   font-size: clamp(.8rem, 3vw, 2.2rem);
   z-index: 50;
   overflow: -moz-hidden-unscrollable;
+}
+
+.bar_adjust {
+margin-left: 12vw;
 }
 
 .feedbackbar::-webkit-scrollbar {
@@ -670,7 +673,7 @@ section {
     transform: translate(0%, 100%);
   }
 
-  .feedbackbar {
+  .bar_adjust {
     margin-left: 6.5vw;
   }
 }
@@ -689,7 +692,7 @@ section {
     font-weight: 800;
   }
 
-  .feedbackbar {
+  .bar_adjust {
     margin-left: 6.5vw;
   }
 
@@ -735,7 +738,7 @@ section {
     flex-direction: row;
   }
 
-  .feedbackbar {
+  .bar_adjust {
     margin-left: 0;
   }
 }
