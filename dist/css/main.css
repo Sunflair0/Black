@@ -1,15 +1,22 @@
 html {
   overflow: hidden;
-  overflow-y: scroll;
+
 }
 
 body {
+  display: flex;
   background-color: #c48c43;
   background-image: url(../asset/BJboard.png);
   overflow: hidden;
+  overflow-y: scroll;
   position: relative;
+  flex-direction: column;
   background-position: top;
   background-repeat: repeat-x;
+}
+
+header {
+border: rgb(43, 0, 255) solid 2px;
 }
 
 body button {
@@ -196,6 +203,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #222830;
   visibility: visible;
   position: relative;
+border: rgb(255, 191, 0) solid 2px;
 }
 
 .curator {
@@ -204,6 +212,7 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent;
   z-index: -1;
   visibility: visible;
+border: red solid 2px;
 }
 
 #feedbackbar {
@@ -903,6 +912,8 @@ table {
 aside {
   margin-top: 2vh;
   width: 100%;
+height: 80vh;
+border: rgb(0, 213, 255) solid 2px;
 }
 
 section {
