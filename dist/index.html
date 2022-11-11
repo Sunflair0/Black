@@ -10,12 +10,27 @@
     <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="icon" href="./favicon.ico/favicon.ico" type="image/png">
+    <link rel="icon" href="/dist/asset/favicon.ico" type="image/png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
+
+    <div class="scoreBox" id="scoreBox">
+        <div id="games1">games
+            <div id="games">0</div>
+        </div>
+        <div id="win1">wins
+            <div id="win">0</div>
+        </div>
+        <div id="tie1">ties
+            <div id="tie">0</div>
+        </div>
+        <div id="lose1">loses
+            <div id="lose">0</div>
+        </div>
+    </div>
     <header>
         <div class="toggle">
             <input type="checkbox" class="checkbox" id="checkbox" />
@@ -25,32 +40,17 @@
                 <div class="ball"></div>
             </label>
         </div>
-        <div id="scoreBox">
-            <div id="games1">games
-                <div id="games">0</div>
-            </div>
-            <div id="win1">wins
-                <div id="win">0</div>
-            </div>
-            <div id="tie1">ties
-                <div id="tie">0</div>
-            </div>
-            <div id="lose1">loses
-                <div id="lose">0</div>
-            </div>
-        </div>
+
         <div class="title">Blackjack(<span class="lowercase">ish</span>)</div>
     </header>
     <aside>
         <div class="curator">
             <div class="bouncer">
-                <div id="feedbackbar">
+                <div class="feedbackbar" id="feedbackbar">
                     <div id="feedbackbutton" autofocus>OK</div>
                 </div>
                 <form id="birthday__input">
-                    <input type="text" id="bday" placeholder="MM/DD/YYYY"
-                        pattern="[0-1]{1}[0-9]{1}/[0-9]{2}/[0-9]{4}" />
-
+                    <input type="text" id="bday" placeholder="MM/DD/YYYY" />
                     <input type="submit" id="date" onclick="verAge" label="submit" />
                 </form>
                 <div form class="deckChoice">
@@ -61,32 +61,32 @@
                                     <td><input type="radio" class="deck__cards--back" id="back0" name="cardChoice"
                                             onchange="deckChoice()" value="Red" checked>
                                         <label for="back0" class="label__choice">
-                                            <img src=".\asset\cardBack0.png" id="back_0" alt="Red" /></label>
+                                            <img src=".\asset\cardBack0.png" id="back0" alt="Red" /></label>
                                     </td>
                                     <td><input type="radio" class="deck__cards--back" id="back1" name="cardChoice"
                                             onchange="deckChoice()" value="Blue">
                                         <label for="back1" class="label__choice">
-                                            <img src=".\asset\cardBack1.png" id="back_1" alt="Blue" /></label>
+                                            <img src=".\asset\cardBack1.png" id="back1" alt="Blue" /></label>
                                     </td>
                                     <td><input type="radio" class="deck__cards--back" id="back2" name="cardChoice"
                                             onchange="deckChoice()" value="Gold">
                                         <label for="back2" class="label__choice">
-                                            <img src=".\asset\cardBack2.png" id="back_2" alt="Gold" /></label>
+                                            <img src=".\asset\cardBack2.png" id="back2" alt="Gold" /></label>
                                     </td>
                                     <td><input type="radio" class="deck__cards--back" id="back3" name="cardChoice"
                                             onchange="deckChoice()" value="Star">
                                         <label for="back3" class="label__choice">
-                                            <img src=".\asset\cardBack3.png" id="back_3" alt="Star" /></label>
+                                            <img src=".\asset\cardBack3.png" id="back3" alt="Star" /></label>
                                     </td>
                                     <td><input type="radio" class="deck__cards--back" id="back4" name="cardChoice"
                                             onchange="deckChoice()" value="Houndstooth">
                                         <label for="back4" class="label__choice">
-                                            <img src=".\asset\cardBack4.png" id="back_4" alt="Houndstooth" /></label>
+                                            <img src=".\asset\cardBack4.png" id="back4" alt="Houndstooth" /></label>
                                     </td>
                                     <td><input type="radio" class="deck__cards--back" id="back5" name="cardChoice"
                                             onchange="deckChoice()" value="Square">
                                         <label for="back5" class="label__choice">
-                                            <img src=".\asset\cardBack5.png" id="back_5" alt="Square" /></label>
+                                            <img src=".\asset\cardBack5.png" id="back5" alt="Square" /></label>
                                     </td>
                                 </tr>
                             </table>
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-   
+    </aside>
     <section>
         <div class="hitstay" id="hit-stay">
             <input type="button" class="flashy" id="btnHit" value="HIT" />
@@ -119,8 +119,7 @@
             </div>
             <canvas id="confetti"></canvas>
         </div>
-    </section> 
-</aside>
+    </section>
     <script src="index.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
