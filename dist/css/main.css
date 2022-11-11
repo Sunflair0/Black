@@ -1,5 +1,5 @@
 html {
-  /* overflow: hidden; */
+  overflow: hidden;
   height: 100vh;
   background-repeat: repeat no-repeat;
 }
@@ -9,10 +9,9 @@ body {
   background-color: #af6f1b;
   background-image: url("../asset/BJboard.png");
   background-repeat: repeat no-repeat;
-  /* overflow-y: auto; */
   overflow: hidden;
   position: relative;
-  /* height: 100vh; */
+  height: 100vh;
   top: 0;
   bottom: 0;
 }
