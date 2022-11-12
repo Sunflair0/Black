@@ -1,6 +1,6 @@
 html {
   overflow: hidden;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 body {
@@ -176,7 +176,7 @@ header {
   flex-direction: column;
   position: absolute;
   visibility: hidden;
-  margin-top: 0;
+  margin-top: 3vh;
   z-index: 100;
 }
 
@@ -382,7 +382,7 @@ input:focus {
 
 .toggle {
   visibility: hidden;
-  margin-top: 1vh;
+  margin-top: 3vh;
   margin-bottom: 1vh;
   display: -webkit-box;
   display: -ms-flexbox;
