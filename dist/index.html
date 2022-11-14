@@ -50,7 +50,7 @@
                     <div id="feedbackbutton" autofocus>OK</div>
                 </div>
                 <form id="birthday__input">
-                    <input type="text" id="bday" placeholder="MM/DD/YYYY" />
+                    <input type="date" id="bday" placeholder="MM/DD/YYYY" />
                     <input type="submit" id="date" onclick="verAge" label="submit" />
                 </form>
                 <div form class="deckChoice">
@@ -114,11 +114,12 @@
         </div>
         <div class="position">
             <div class="card-size">
-                <img src="" alt="card back" id="chosenOne">
-                <div id="deckcount">&#x2713</div>
+                <img src="" alt="card back" class="chosenOne" id="chosenOne">
+                <div class="deckcount" id="deckcount">&#x2713</div>
             </div>
-            <canvas id="confetti"></canvas>
         </div>
+        <canvas id="confetti"></canvas>
+
     </section>
     <script src="index.min.js"></script>
     <script type="text/javascript" src="main.js"></script>

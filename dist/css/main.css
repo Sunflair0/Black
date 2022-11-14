@@ -1,6 +1,5 @@
 html {
   overflow: hidden;
-  /* overflow-y: scroll; */
 }
 
 body {
@@ -132,41 +131,31 @@ header {
   margin-left: 2vh;
 }
 
-#chosenOne {
+.chosenOne {
   visibility: hidden;
-  position: absolute;
-  top: 0;
+  display: flex;
+  position: relative;
+  /* transform: translate(50%, -20%); */
   z-index: -1;
 }
 
-#deckcount {
-
-  /* display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; */
+.deckcount {
   visibility: hidden;
-  /* text-align: center; */
-  margin: auto;
-  /* height:min(20px, 3vh, 35px); */
-  /* -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center; */
-  justify-content: center;
   display: grid;
-  background: #e0c365;
-  background: radial-gradient(circle at 50% 7px, #e0c365 2.6%, #e0c365 0%, #d6d2ad 47%, #ac7c29 98%);
+  position: absolute;
+  -webkit-transform: translate(25%, -250%);
+  transform: translate(25%, -250%);
+  justify-content: center;
   border: black double 5px;
   border-radius: 25%;
   padding: 0px .5%;
-  position: absolute;
-  z-index: 300;
+  margin: auto;
+  background: #e0c365;
+  background: radial-gradient(circle at 50% 7px, #e0c365 2.6%, #e0c365 0%, #d6d2ad 47%, #ac7c29 98%);
   font-family: 'Smokum', 'Veranda', sans-serif;
   font-weight: 700;
-  /* -webkit-transform: translate(0.5%, 135%);
-  transform: translate(0.5%, 135%); */
   font-size: clamp(23px, 3vh, 35px);
-  transform: translate(100%, 150%);
+  z-index: 300;
   aspect-ratio: 3/1;
 }
 
@@ -226,8 +215,10 @@ header {
 }
 
 .position {
+  /* display: flex;
+  position: relative; */
   margin-top: -109vh;
-  height: auto;
+  /* height: auto; */
   -webkit-transform: translate(82vw, 18vh);
   transform: translate(82vw, 18vh);
 }
@@ -264,7 +255,7 @@ aside {
   border-radius: 5px;
   border: double 5px;
   height: auto;
-  font-size: clamp(.8rem, 3vw, 2.2rem);
+  font-size: clamp(.8rem, 2vw, 2rem);
   z-index: 50;
   overflow: -moz-hidden-unscrollable;
 }
@@ -516,7 +507,7 @@ input:focus {
   margin-right: -120%;
   margin-bottom: 104vh;
   border-radius: 50%;
-  font-size: .9rem;
+  font-size: clamp(.7rem, 1vw, .9rem);
 }
 
 #btnHit:hover,
@@ -668,9 +659,6 @@ section {
 
 
 @media screen and (min-width: 450px) {
-  #deckcount {
-    transform: translate(0%, 100%);
-  }
 
   .bar_adjust {
     margin-left: 6.5vw;
@@ -735,6 +723,10 @@ section {
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+
+  #ccd {
+    margin-left: 0%;
   }
 
   .bar_adjust {
