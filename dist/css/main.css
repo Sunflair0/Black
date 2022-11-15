@@ -151,7 +151,7 @@ header {
   background: #e0c365;
   background: radial-gradient(circle at 50% 7px, #e0c365 2.6%, #e0c365 0%, #d6d2ad 47%, #ac7c29 98%);
   font-family: 'Smokum', 'Veranda', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   z-index: 300;
   aspect-ratio: 3/1;
@@ -601,11 +601,10 @@ table {
   flex-direction: row;
   justify-content: space-around;
   visibility: hidden;
-  top: 5vh;
   width: 50%;
   max-width: 500px;
   gap: 10%;
-  margin: auto;
+  margin: -5vh auto;
 }
 
 .title {
@@ -663,6 +662,10 @@ section {
 
 @media screen and (min-width: 541px) {
 
+  .card-size img {
+        width: min(100px, 13vw, 300px);
+    }
+
   .label {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
@@ -678,7 +681,7 @@ section {
   }
 
   #ccd {
-    margin-top: -125vh;
+    margin-top: -137vh;
     margin-left: 14%;
   }
 
@@ -732,8 +735,8 @@ section {
   }
 
   .position {
-    -webkit-transform: translate(77vw, 18vh);
-    transform: translate(77vw, 18vh);
+    -webkit-transform: translate(77vw, 22vh);
+    transform: translate(77vw, 22vh);
   }
 }
 

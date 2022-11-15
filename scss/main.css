@@ -125,7 +125,7 @@ header {
   background: rgb(224, 195, 101);
   background: radial-gradient(circle at 50% 7px, rgb(224, 195, 101) 2.6%, rgb(224, 195, 101) 0%, rgb(214, 210, 173) 47%, rgb(172, 124, 41) 98%);
   font-family: "Smokum", "Veranda", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   z-index: 300;
   aspect-ratio: 3/1;
@@ -516,6 +516,9 @@ input:focus {
   }
 }
 @media screen and (max-width: 541px) {
+  .card-size img {
+    width: min(100px, 13vw, 300px);
+  }
   .label {
     transform: scale(1.2);
   }
@@ -527,7 +530,7 @@ input:focus {
     font-size: clamp(18px, 2vh, 35px);
   }
   #ccd {
-    margin-top: -125vh;
+    margin-top: -137vh;
     margin-left: 14%;
   }
   .feedbackbar {
@@ -570,7 +573,7 @@ input:focus {
     margin-left: 15.5vh;
   }
   .position {
-    transform: translate(77vw, 18vh);
+    transform: translate(77vw, 22vh);
   }
 }
 @media screen and (min-width: 900px) {
@@ -663,11 +666,10 @@ table {
   flex-direction: row;
   justify-content: space-around;
   visibility: hidden;
-  top: 5vh;
   width: 50%;
   max-width: 500px;
   gap: 10%;
-  margin: auto;
+  margin: -5vh auto;
 }
 
 .title {
