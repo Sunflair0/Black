@@ -5,8 +5,7 @@ html {
 
 body {
   background-color: #af6f1b;
-  background-image: url(../asset/BJboard.png);
-  background-repeat: repeat no-repeat;
+  background-image: url("../asset/BJboard.png");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -25,7 +24,7 @@ body button {
   text-shadow: 1px 1px 1px #000;
   background-color: #e65e5e;
   background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-  box-shadow: inset 2px 2px 3px rgb(255, 255, 255), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 2px 2px 3px white, inset -2px -2px 3px rgba(0, 0, 0, 0.6);
   margin: auto;
   text-align: center;
   justify-content: center;
@@ -146,11 +145,8 @@ header {
   flex-direction: row;
   flex-flow: row wrap;
   position: absolute;
-  margin-bottom: 7vh;
-  margin-top: -125vh;
-  margin-left: 14%;
-  margin-top: -123vh;
-  margin-left: 20%;
+  margin-top: -129vh;
+  margin-left: 19%;
   width: 55%;
 }
 
@@ -160,8 +156,7 @@ header {
   flex-direction: row;
   flex-flow: row wrap;
   position: absolute;
-  margin-top: -98vh;
-  margin-bottom: 7vh;
+  margin-top: -85vh;
   width: 75%;
 }
 
@@ -172,8 +167,12 @@ header {
 }
 
 .position {
-  margin-top: -127vh;
-  transform: translate(82vw, 18vh);
+  transform: translate(76vw, -98vh);
+}
+
+.indicator_card_onStart {
+  margin-top: -11vh;
+  margin-left: -8vw;
 }
 
 .bouncer {
@@ -361,7 +360,7 @@ input:focus {
 }
 
 .fa-moon {
-  color: #ff9100;
+  color: #2aceff;
 }
 
 .fa-lightbulb {
@@ -434,14 +433,20 @@ input:focus {
 
 .start {
   float: right;
-  margin: -7vh 2vh 0 0;
+  margin: -5vh 0 0 -5vh;
+  width: 100px;
   justify-content: center;
   display: flex;
 }
 
+.bar_adjust {
+  margin-left: 7vw;
+  margin-top: -1vh;
+}
+
 #btnHit,
 #btnStay {
-  margin-top: -88vh;
+  margin-top: -87vh;
   margin-right: -120%;
   margin-bottom: 100vh;
   border-radius: 50%;
@@ -488,7 +493,6 @@ input:focus {
 }
 
 .hitstay {
-  margin-top: 20vh;
   width: 45%;
   visibility: hidden;
 }
@@ -506,16 +510,27 @@ input:focus {
 }
 
 @media screen and (min-width: 450px) {
+  .title {
+    font-size: clamp(30px, 9vw, 65px);
+    bottom: 2vh;
+  }
+  #ccd {
+    margin-top: -133vh;
+    margin-left: 12%;
+  }
   .flashy {
     height: 50px;
     width: 50px;
   }
   .bar_adjust {
     margin-left: 6.5vw;
-    margin-top: 3vh;
+    margin-top: -2vh;
   }
 }
 @media screen and (max-width: 541px) {
+  body {
+    background-size: contain;
+  }
   .card-size img {
     width: min(100px, 13vw, 300px);
   }
@@ -530,12 +545,14 @@ input:focus {
     font-size: clamp(18px, 2vh, 35px);
   }
   #ccd {
-    margin-top: -137vh;
+    margin-top: -140vh;
     margin-left: 14%;
   }
+  #ucd {
+    margin-top: -97vh;
+  }
   .feedbackbar {
-    margin-top: 2vh;
-    font-size: clamp(15px, 2vw, 46px);
+    font-size: clamp(15px, 2vw, 20px);
   }
   #games1,
 #lose1,
@@ -550,6 +567,7 @@ input:focus {
   }
   .bar_adjust {
     margin-left: 6.5vw;
+    margin-top: 1vh;
   }
   input {
     font-size: 1rem;
@@ -562,6 +580,9 @@ input:focus {
     width: 150px;
     margin: -5vh 17vh 0 0;
   }
+  .indicator_card_onStart {
+    transform: translate(2vw, -13vh);
+  }
   #btnHit,
 #btnStay {
     width: 63px;
@@ -573,7 +594,7 @@ input:focus {
     margin-left: 15.5vh;
   }
   .position {
-    transform: translate(77vw, 22vh);
+    transform: translate(79vw, -100vh);
   }
 }
 @media screen and (min-width: 900px) {
@@ -584,20 +605,27 @@ input:focus {
     font-weight: 700;
     font-size: clamp(18px, 3vh, 35px);
   }
-  .hitstay {
-    margin-top: 15vh;
-  }
   .scoreBox {
     display: flex;
     flex-direction: row;
   }
+  .indicator_card_onStart {
+    margin-top: -14vh;
+  }
   #ccd {
-    margin-top: -130vh;
+    margin-top: -128vh;
     margin-left: 0%;
+  }
+  #ucd {
+    margin-top: -94vh;
   }
   .bar_adjust {
     margin-left: 0;
-    margin-top: 9vh;
+    margin-top: 3vh;
+  }
+  #btnHit,
+#btnStay {
+    margin-top: -91vh;
   }
 }
 @media screen and (min-width: 920px) {
@@ -607,6 +635,11 @@ input:focus {
   }
   .position {
     margin-right: -20%;
+  }
+}
+@media screen and (width: 1024px) {
+  .title {
+    bottom: -4vh;
   }
 }
 @media screen and (width: 1024px) and (height: 600px) {
@@ -676,8 +709,8 @@ table {
   letter-spacing: 0.1rem;
   display: flex;
   position: relative;
-  font-size: clamp(30px, 9vw, 65px);
-  bottom: 2vh;
+  font-size: 24px;
+  bottom: -2vh;
   align-items: center;
   justify-content: center;
   text-shadow: 2px 3px 5px #fa622f, -1px 1px 1px #74321d, 1.6px -1.4px 0 #ffffff, 2px 2px 4px rgb(0, 0, 0);
@@ -687,7 +720,7 @@ table {
 
 .lowercase {
   font-variant: normal;
-  font-size: clamp(18px, 3vw, 28px);
+  font-size: clamp(14px, 3vw, 28px);
   padding-top: 7px;
   margin: auto 0;
 }

@@ -1,4 +1,14 @@
 @include media-xsw {
+    .title {
+        font-size: clamp(30px, 9vw, 65px);
+        bottom: 2vh;
+    }
+
+    #ccd {
+        margin-top: -133vh;
+        margin-left: 12%;
+    }
+
     .flashy {
         height: 50px;
         width: 50px;
@@ -6,11 +16,15 @@
 
     .bar_adjust {
         margin-left: 6.5vw;
-        margin-top: 3vh;
+        margin-top: -2vh;
     }
 }
 
 @include media-sm {
+
+    body {
+        background-size: contain;
+    }
 
     .card-size img {
         width: min(100px, 13vw, 300px);
@@ -31,13 +45,16 @@
     }
 
     #ccd {
-        margin-top: -137vh;
+        margin-top: -140vh;
         margin-left: 14%;
     }
 
+    #ucd {
+        margin-top: -97vh;
+    }
+
     .feedbackbar {
-        margin-top: 2vh;
-        font-size: clamp(15px, 2vw, 46px);
+        font-size: clamp(15px, 2vw, 20px);
     }
 
     #games1,
@@ -54,6 +71,7 @@
 
     .bar_adjust {
         margin-left: 6.5vw;
+        margin-top: 1vh;
     }
 
     input {
@@ -72,6 +90,10 @@
         margin: -5vh 17vh 0 0;
     }
 
+    .indicator_card_onStart {
+        transform: translate(2vw, -13vh);
+    }
+
     #btnHit,
     #btnStay {
         width: 63px;
@@ -85,8 +107,8 @@
     }
 
     .position {
-        -webkit-transform: translate(77vw, 22vh);
-        transform: translate(77vw, 22vh);
+        -webkit-transform: translate(79vw, -100vh);
+        transform: translate(79vw, -100vh);
     }
 }
 
@@ -100,24 +122,33 @@
         font-size: clamp(18px, 3vh, 35px);
     }
 
-    .hitstay {
-        margin-top: 15vh;
-    }
-
     .scoreBox {
         display: flex;
         -ms-flex-direction: row;
         flex-direction: row;
     }
 
+    .indicator_card_onStart {
+        margin-top: -14vh;
+    }
+
     #ccd {
-        margin-top: -130vh;
+        margin-top: -128vh;
         margin-left: 0%;
+    }
+
+    #ucd {
+        margin-top: -94vh;
     }
 
     .bar_adjust {
         margin-left: 0;
-        margin-top: 9vh;
+        margin-top: 3vh;
+    }
+
+    #btnHit,
+    #btnStay {
+        margin-top: -91vh;
     }
 }
 
@@ -130,6 +161,13 @@
 
     .position {
         margin-right: -20%;
+    }
+}
+
+@media screen and (width: 1024px) {
+
+    .title {
+        bottom: -4vh;
     }
 }
 

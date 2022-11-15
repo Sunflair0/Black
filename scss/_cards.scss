@@ -70,11 +70,8 @@ header {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: absolute;
-  margin-bottom: 7vh;
-  margin-top: -125vh;
-  margin-left: 14%;
-  margin-top: -123vh;
-  margin-left: 20%;
+  margin-top: -129vh;
+  margin-left: 19%;
   width: 55%;
 }
 
@@ -91,8 +88,7 @@ header {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: absolute;
-  margin-top: -98vh;
-  margin-bottom: 7vh;
+  margin-top: -85vh;
   width: 75%;
 }
 
@@ -104,7 +100,11 @@ header {
 }
 
 .position {
-  margin-top: -127vh;
-  -webkit-transform: translate(82vw, 18vh);
-  transform: translate(82vw, 18vh);
+  -webkit-transform: translate(76vw, -98vh);
+  transform: translate(76vw, -98vh);
+}
+
+.indicator_card_onStart {
+  margin-top: -11vh;
+  margin-left: -8vw;
 }

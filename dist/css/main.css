@@ -393,7 +393,7 @@ input:focus {
 }
 
 .fa-moon {
-  color: #ff9100;
+  color: #2aceff;
 }
 
 .fa-lightbulb {
@@ -482,7 +482,8 @@ input:focus {
 
 .start {
   float: right;
-  margin: -7vh 2vh 0 0;
+  margin: -5vh 0 0 -5vh;
+  width: 100px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -645,11 +646,6 @@ section {
   margin-right: 0;
 }
 
-.start {
-  margin: -5vh 0 0 -5vh;
-  width: 100px;
-}
-
 @media screen and (min-width: 450px) {
 
   .title {
@@ -744,7 +740,6 @@ section {
   }
 
   .indicator_card_onStart {
-    /* margin-top: -13vh; */
     transform: translate(2vw, -13vh);
   }
 

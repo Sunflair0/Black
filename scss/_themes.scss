@@ -26,7 +26,7 @@
 }
 
 .fa-moon {
-    color: #ff9100;
+    color: #2aceff;
 }
 
 .fa-lightbulb {
@@ -35,24 +35,24 @@
 
 .label {
     background: #222830;
-    -webkit-box-shadow: #222830 inset;
-    box-shadow: #222830 inset;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    border-radius: 50px;
-    position: relative;
-    padding: 5px;
-    height: 26px;
-    width: 50px;
-    margin: auto;
-    cursor: pointer;
+  -webkit-box-shadow: #222830 inset;
+  box-shadow: #222830 inset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  height: 26px;
+  width: 50px;
+  margin: auto;
+  cursor: pointer;
 }
 
 .ball {

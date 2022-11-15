@@ -9,31 +9,34 @@ html {
 
 body {
     background-color: #af6f1b;
-    background-image: url(../asset/BJboard.png);
-    background-repeat: repeat no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-    max-width: 100%;
-    height: 100vh;
-    top: 0;
+  background-image: url("../asset/BJboard.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  top: 0;
 
     & button {
-        height: 30px;
-        width: 50px;
-        border-radius: 12px;
-        border: 1px solid black;
-        font-weight: bold;
-        font-size: .9rem;
-        color: $primary-accent-color;
-        text-shadow: 1px 1px 1px #000;
-        background-color: #e65e5e;
-        background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 1), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-        margin: auto;
-        text-align: center;
-        justify-content: center;
-        z-index: 60;
+          height: 30px;
+  width: 50px;
+  border-radius: 12px;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: .9rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+  background-color: #e65e5e;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0, 0, 0, 0.2)), color-stop(30%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  -webkit-box-shadow: inset 2px 2px 3px white, inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 2px 2px 3px white, inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  margin: auto;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 60;
 
         &:hover {
             background-color: rgba(206, 11, 11, 0.9);

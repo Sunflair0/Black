@@ -29,7 +29,8 @@
 
 .start {
     float: right;
-    margin: -7vh 2vh 0 0;
+    margin: -5vh 0 0 -5vh;
+    width: 100px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -38,9 +39,14 @@
     display: flex;
 }
 
+.bar_adjust {
+    margin-left: 7vw;
+    margin-top: -1vh;
+}
+
 #btnHit,
 #btnStay {
-    margin-top: -88vh;
+    margin-top: -87vh;
     margin-right: -120%;
     margin-bottom: 100vh;
     border-radius: 50%;
@@ -88,7 +94,6 @@
 }
 
 .hitstay {
-    margin-top: 20vh;
     width: 45%;
     visibility: hidden;
 }
