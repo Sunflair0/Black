@@ -504,9 +504,9 @@ input:focus {
 
 #btnHit,
 #btnStay {
-  margin-top: -95vh;
+  margin-top: -88vh;
   margin-right: -120%;
-  margin-bottom: 104vh;
+  margin-bottom: 100vh;
   border-radius: 50%;
   font-size: clamp(.7rem, 1vw, .9rem);
 }
