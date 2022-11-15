@@ -215,7 +215,7 @@ header {
 }
 
 .position {
-  margin-top: -109vh;
+  margin-top: -127vh;
   -webkit-transform: translate(82vw, 18vh);
   transform: translate(82vw, 18vh);
 }
@@ -604,7 +604,7 @@ table {
   width: 50%;
   max-width: 500px;
   gap: 10%;
-  margin: -5vh auto;
+  margin: -5vh 12%;
 }
 
 .title {
