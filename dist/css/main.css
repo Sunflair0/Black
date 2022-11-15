@@ -392,11 +392,11 @@ input:focus {
   transition: .5s linear;
 }
 
-.moon {
+.fa-moon {
   color: #2aceff;
 }
 
-.lightbulb {
+.fa-lightbulb {
   color: #ffff00;
 }
 
