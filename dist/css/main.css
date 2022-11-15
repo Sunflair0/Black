@@ -10,7 +10,7 @@ body {
   overflow: hidden;
   position: relative;
   max-width: 100%;
-  height: 98vh;
+  height: 100vh;
   top: 0;
   bottom: 0;
 }
@@ -236,8 +236,8 @@ aside {
 }
 
 .curator {
-  min-width: 100%;
-  min-height: 84vh;
+  width: 100%;
+  height: 69.7vh;
   background-color: transparent;
   z-index: -1;
   visibility: visible;
