@@ -364,7 +364,7 @@ input:focus {
 }
 
 .toggle {
-  /* visibility: hidden; */
+  visibility: hidden;
   margin-top: 3vh;
   margin-bottom: 1vh;
   display: -webkit-box;
