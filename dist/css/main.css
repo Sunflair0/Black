@@ -233,6 +233,7 @@ aside {
   background-color: #222830;
   visibility: visible;
   position: relative;
+margin-bottom: 10vh;
 }
 
 .curator {
