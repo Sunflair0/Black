@@ -237,7 +237,7 @@ aside {
 
 .curator {
   min-width: 100%;
-  height: 84vh;
+  min-height: 84vh;
   background-color: transparent;
   z-index: -1;
   visibility: visible;
