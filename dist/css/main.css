@@ -364,7 +364,7 @@ input:focus {
 }
 
 .toggle {
-  visibility: hidden;
+  /* visibility: hidden; */
   margin-top: 3vh;
   margin-bottom: 1vh;
   display: -webkit-box;
@@ -392,11 +392,11 @@ input:focus {
   transition: .5s linear;
 }
 
-.fa-moon {
+.fas.fa-moon {
   color: #2aceff;
 }
 
-.fa-lightbulb {
+.fas.fa-lightbulb {
   color: #ffff00;
 }
 
