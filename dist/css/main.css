@@ -237,7 +237,7 @@ aside {
 
 .curator {
   min-width: 100%;
-  height: 80.7vh;
+  height: 84vh;
   background-color: transparent;
   z-index: -1;
   visibility: visible;
@@ -254,7 +254,7 @@ aside {
   border-radius: 5px;
   border: double 5px;
   height: auto;
-  font-size: 15px;
+  font-size: 14px;
   z-index: 50;
   overflow: -moz-hidden-unscrollable;
 }
