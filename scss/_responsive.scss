@@ -1,220 +1,165 @@
 @include media-xsw {
-  .flashy {
-    height: 50px;
-    width: 50px;
-  }
+    .flashy {
+        height: 50px;
+        width: 50px;
+    }
 
-  .bar_adjust {
-    margin-left: 6.5vw;
-    margin-top: 3vh;
-  }
+    .bar_adjust {
+        margin-left: 6.5vw;
+        margin-top: 3vh;
+    }
 }
 
 @include media-sm {
-  .deckcount {
-    font-weight: 700;
-    font-size: clamp(18px, 3vh, 35px);
-  }
 
-  #ccd {
-    margin-top: -125vh;
-    margin-left: 14%;
-  }
+    .title {
+        bottom: 3vh;
+    }
 
-  .feedbackbar {
-    margin-top: 2vh;
-    font-size: clamp(15px, 2vw, 46px);
-  }
+    .deckcount {
+        font-weight: 700;
+        font-size: clamp(18px, 2vh, 35px);
+    }
 
-  #games1,
-  #lose1,
-  #tie1,
-  #win1 {
-    padding: 3px;
-    background: radial-gradient(circle at 50% 7px, black 3.6%, #e0c365 0%, #d6d2ad 40%, #ac7c29 98%);
-    width: 60px;
-    height: 100%;
-    font-size: 20px;
-    font-weight: 800;
-  }
+    #ccd {
+        margin-top: -125vh;
+        margin-left: 14%;
+    }
 
-  .bar_adjust {
-    margin-left: 6.5vw;
-  }
+    .feedbackbar {
+        margin-top: 2vh;
+        font-size: clamp(15px, 2vw, 46px);
+    }
 
-  input {
-    font-size: 1rem;
-  }
+    #games1,
+    #lose1,
+    #tie1,
+    #win1 {
+        padding: 3px;
+        background: radial-gradient(circle at 50% 7px, black 3.6%, #e0c365 0%, #d6d2ad 40%, #ac7c29 98%);
+        width: 60px;
+        height: 100%;
+        font-size: 20px;
+        font-weight: 800;
+    }
 
-  .label {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: auto;
-  }
+    .bar_adjust {
+        margin-left: 6.5vw;
+    }
 
-  .start {
-    width: 150px;
-    margin: -5vh 17vh 0 0;
-  }
-
-  #btnHit,
-  #btnStay {
-    width: 63px;
-    height: 63px;
-    font-size: 1rem;
-  }
-
-  #btnPlay {
-    margin-right: -15.5vh;
-    margin-left: 15.5vh;
-  }
-
-  .position {
-    -webkit-transform: translate(77vw, 18vh);
-    transform: translate(77vw, 18vh);
-  }
-}
-@include media-sm {
     input {
         font-size: 1rem;
     }
+
     .label {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin: auto;
     }
-    .title {
-        margin-top: 5vh;
-    }
-    #scoreBox {
-        flex-direction: row;
-        margin-top: -4.5vh;
-        width: 60px;
-        height: 100px;
-    } 
-    #feedbackbar {
-        margin-top: -1vh;
-    }
-    .title {
-        font-size: 3.7rem;      
-                
-          &::first-letter {
-            font-size: 4.2rem;
-            }
-    }
-    .lowercase {
-        font-size: 1.7rem;
-        margin-bottom: -2.4vh;
-    }
-    #deck__line {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        min-width: 450px;
-    }
-    .card-size img {
-        margin: .80vh;
-        min-height: 120px;
-        min-width: 84px;
-        box-shadow: 4px 4px 5px black;
-    }
+
     .start {
         width: 150px;
         margin: -5vh 17vh 0 0;
     }
+
     #btnHit,
     #btnStay {
         width: 63px;
         height: 63px;
         font-size: 1rem;
     }
+
     #btnPlay {
         margin-right: -15.5vh;
         margin-left: 15.5vh;
-        width: 100px;
     }
-    #deckcount {
-        padding-bottom: 1vh;
-        height: 35px;
-        width: 35px;
-        font-size: 18px;
-        transform: translate(0,150%);
-    }
+
     .position {
-        transform: translate(77vw,18vh);
-    }
-    .section {
-        width: auto;
+        -webkit-transform: translate(77vw, 18vh);
+        transform: translate(77vw, 18vh);
     }
 }
+
 @include media-mdi {
-     section {
+    section {
+        margin-top: 15vh;
+    }
+
+.hitstay {
     margin-top: 15vh;
-  }
-
-  .scoreBox {
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  #ccd {
-    margin-top: -130vh;
-    margin-left: 0%;
-  }
-
-  .bar_adjust {
-    margin-left: 0;
-    margin-top: 9vh;
-  }
 }
+
+    .scoreBox {
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    #ccd {
+        margin-top: -130vh;
+        margin-left: 0%;
+    }
+
+    .bar_adjust {
+        margin-left: 0;
+        margin-top: 9vh;
+    }
+}
+
 @include media-md {
 
-  .start {
-    width: 150px;
-    margin: -5vh 17vh 0 0;
-  }
-
-  .position {
-    -webkit-transform: translate(85vw, 9vh);
-    transform: translate(85vw, 9vh);
-    margin-right: -20%;
-  }
-}
-@include media-nest {
-  #btnPlay {
-    margin-left: 30vh;
-    width: 150px;
-  }
-
-  #ccd,
-  #ucd {
-    margin: -130vh 0 0;
-    width: 75%;
-  }
-
-  .position {
-    -webkit-transform: translate(87.5vw, 10vh);
-    transform: translate(87.5vw, 10vh);
-  }
-
-  #lose1,
-  #games1,
-  #win1,
-  #tie1 {
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-  #ccd {
-    margin-top: -133vh;
-  }
-
-  #ucd {
-    margin-top: -103vh;
-  }
+    .start {
+        width: 150px;
+        margin: -5vh 17vh 0 0;
     }
+
+    .position {
+        -webkit-transform: translate(85vw, 9vh);
+        transform: translate(85vw, 9vh);
+        margin-right: -20%;
+    }
+}
+
+@include media-nest {
+    .title {
+        bottom: 1vh;
+    }
+
+    #btnPlay {
+        margin-left: 30vh;
+        width: 150px;
+    }
+
+    #ccd,
+    #ucd {
+        margin: -130vh 0 0;
+        width: 75%;
+    }
+
+    .position {
+        -webkit-transform: translate(87.5vw, 10vh);
+        transform: translate(87.5vw, 10vh);
+    }
+
+    #lose1,
+    #games1,
+    #win1,
+    #tie1 {
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #ccd {
+        margin-top: -133vh;
+    }
+
+    #ucd {
+        margin-top: -103vh;
+    }
+}
+
 // @include media-xl {
 //     #feedbackbar {
 //         margin-top: -3.5vh;

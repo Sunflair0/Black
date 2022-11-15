@@ -512,9 +512,12 @@ input:focus {
   }
 }
 @media screen and (max-width: 541px) {
+  .title {
+    bottom: 3vh;
+  }
   .deckcount {
     font-weight: 700;
-    font-size: clamp(18px, 3vh, 35px);
+    font-size: clamp(18px, 2vh, 35px);
   }
   #ccd {
     margin-top: -125vh;
@@ -563,79 +566,11 @@ input:focus {
     transform: translate(77vw, 18vh);
   }
 }
-@media screen and (max-width: 541px) {
-  input {
-    font-size: 1rem;
-  }
-  .label {
-    align-items: center;
-    margin: auto;
-  }
-  .title {
-    margin-top: 5vh;
-  }
-  #scoreBox {
-    flex-direction: row;
-    margin-top: -4.5vh;
-    width: 60px;
-    height: 100px;
-  }
-  #feedbackbar {
-    margin-top: -1vh;
-  }
-  .title {
-    font-size: 3.7rem;
-  }
-  .title::first-letter {
-    font-size: 4.2rem;
-  }
-  .lowercase {
-    font-size: 1.7rem;
-    margin-bottom: -2.4vh;
-  }
-  #deck__line {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    min-width: 450px;
-  }
-  .card-size img {
-    margin: 0.8vh;
-    min-height: 120px;
-    min-width: 84px;
-    box-shadow: 4px 4px 5px black;
-  }
-  .start {
-    width: 150px;
-    margin: -5vh 17vh 0 0;
-  }
-  #btnHit,
-#btnStay {
-    width: 63px;
-    height: 63px;
-    font-size: 1rem;
-  }
-  #btnPlay {
-    margin-right: -15.5vh;
-    margin-left: 15.5vh;
-    width: 100px;
-  }
-  #deckcount {
-    padding-bottom: 1vh;
-    height: 35px;
-    width: 35px;
-    font-size: 18px;
-    transform: translate(0, 150%);
-  }
-  .position {
-    transform: translate(77vw, 18vh);
-  }
-  .section {
-    width: auto;
-  }
-}
 @media screen and (min-width: 900px) {
   section {
+    margin-top: 15vh;
+  }
+  .hitstay {
     margin-top: 15vh;
   }
   .scoreBox {
@@ -662,6 +597,9 @@ input:focus {
   }
 }
 @media screen and (width: 1024px) and (height: 600px) {
+  .title {
+    bottom: 1vh;
+  }
   #btnPlay {
     margin-left: 30vh;
     width: 150px;

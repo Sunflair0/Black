@@ -617,7 +617,7 @@ table {
   display: flex;
   position: relative;
   font-size: clamp(30px, 9vw, 65px);
-  bottom: 2vh;
+  bottom: 5vh;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -664,10 +664,13 @@ section {
 }
 
 @media screen and (min-width: 541px) {
+  .title {
+    bottom: 3vh;
+  }
 
   .deckcount {
     font-weight: 700;
-    font-size: clamp(18px, 3vh, 35px);
+    font-size: clamp(18px, 2vh, 35px);
   }
 
   #ccd {
@@ -735,6 +738,10 @@ section {
     margin-top: 15vh;
   }
 
+.hitstay {
+    margin-top: 15vh;
+}
+
   .scoreBox {
     display: flex;
     -ms-flex-direction: row;
@@ -767,6 +774,10 @@ section {
 }
 
 @media screen and (width: 1024px) and (height: 600px) {
+
+  .title {
+    bottom: 1vh;
+  }
 
   #btnPlay {
     margin-left: 30vh;
