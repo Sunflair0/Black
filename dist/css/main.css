@@ -180,8 +180,8 @@ header {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: absolute;
-margin-top: -129vh;
-    margin-left: 19%;
+  margin-top: -129vh;
+  margin-left: 19%;
   width: 55%;
 }
 
@@ -210,12 +210,13 @@ margin-top: -129vh;
 }
 
 .position {
-  -webkit-transform: translate(64vw, 18vh);
-  transform: translate(64vw, 18vh);
+  -webkit-transform: translate(76vw, -98vh);
+  transform: translate(76vw, -98vh);
 }
 
 .indicator_card_onStart {
-  margin-top: -127vh;
+  margin-top: -11vh;
+  margin-left: -8vw;
 }
 
 .bouncer {
@@ -490,6 +491,11 @@ input:focus {
   display: flex;
 }
 
+.bar_adjust {
+  margin-left: 7vw;
+  margin-top: -1vh;
+}
+
 #btnHit,
 #btnStay {
   margin-top: -87vh;
@@ -610,8 +616,8 @@ table {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  font-size: clamp(30px, 9vw, 65px);
-  bottom: 2vh;
+  font-size: 24px;
+  bottom: -2vh;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -625,7 +631,7 @@ table {
 
 .lowercase {
   font-variant: normal;
-  font-size: clamp(18px, 3vw, 28px);
+  font-size: clamp(14px, 3vw, 28px);
   padding-top: 7px;
   margin: auto 0;
 }
@@ -646,10 +652,15 @@ section {
 
 @media screen and (min-width: 450px) {
 
-#ccd {
- margin-top: -133vh;
-  margin-left: 12%;
-}
+  .title {
+    font-size: clamp(30px, 9vw, 65px);
+    bottom: 2vh;
+  }
+
+  #ccd {
+    margin-top: -133vh;
+    margin-left: 12%;
+  }
 
   .flashy {
     height: 50px;
@@ -733,7 +744,8 @@ section {
   }
 
   .indicator_card_onStart {
-    margin-top: -112vh;
+    /* margin-top: -13vh; */
+    transform: translate(2vw, -13vh);
   }
 
   #btnHit,
@@ -749,8 +761,8 @@ section {
   }
 
   .position {
-    -webkit-transform: translateX(70vw);
-    transform: translateX(70vw);
+    -webkit-transform: translate(79vw, -100vh);
+    transform: translate(79vw, -100vh);
   }
 }
 
@@ -770,12 +782,17 @@ section {
     flex-direction: row;
   }
 
+  .indicator_card_onStart {
+    margin-top: -14vh;
+  }
+
   #ccd {
-    margin-top: -130vh;
+    margin-top: -128vh;
     margin-left: 0%;
   }
+
   #ucd {
-        margin-top: -94vh;
+    margin-top: -94vh;
   }
 
   .bar_adjust {
