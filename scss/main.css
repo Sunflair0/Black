@@ -379,7 +379,6 @@ input:focus {
   padding: 5px;
   height: 26px;
   width: 50px;
-  transform: scale(1.2);
   margin: auto;
   cursor: pointer;
 }
@@ -517,6 +516,9 @@ input:focus {
   }
 }
 @media screen and (max-width: 541px) {
+  .label {
+    transform: scale(1.2);
+  }
   .title {
     bottom: 3vh;
   }

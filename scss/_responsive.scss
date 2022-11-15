@@ -12,6 +12,11 @@
 
 @include media-sm {
 
+    .label {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
     .title {
         bottom: 3vh;
     }

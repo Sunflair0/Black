@@ -14,6 +14,7 @@ body {
   height: 100vh;
   top: 0;
 }
+
 body button {
   height: 30px;
   width: 50px;
@@ -418,8 +419,6 @@ input:focus {
   padding: 5px;
   height: 26px;
   width: 50px;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
   margin: auto;
   cursor: pointer;
 }
@@ -663,6 +662,12 @@ section {
 }
 
 @media screen and (min-width: 541px) {
+
+  .label {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
   .title {
     bottom: 3vh;
   }
