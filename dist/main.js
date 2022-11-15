@@ -148,7 +148,7 @@ function start() {
 
     statusMessage("");
     document.querySelector('.feedbackbar').classList.add('bar_adjust');
-    document.querySelector('.position').style.marginTop = "-109vh";
+    document.querySelector('.position').classList.add('indicator_card_onStart');
     document.getElementById("deck__line").style.visibility = "hidden";
     document.getElementById("btnPlay").style.visibility = "hidden";
     document.getElementsByClassName("bouncer")[0].style.visibility = "hidden";
