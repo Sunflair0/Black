@@ -254,7 +254,7 @@ aside {
   border-radius: 5px;
   border: double 5px;
   height: auto;
-  font-size: clamp(15px, 2vw, 46px);
+  font-size: 15px;
   z-index: 50;
   overflow: -moz-hidden-unscrollable;
 }
@@ -685,7 +685,8 @@ section {
   }
 
   .feedbackbar {
-    margin-top: 7vh;
+    margin-top: 2vh;
+font-size: clamp(15px, 2vw, 46px);
   }
 
   #games1,
