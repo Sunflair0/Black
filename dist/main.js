@@ -525,7 +525,7 @@ function youWin() {
     document.getElementById("confetti").style.visibility = "visible";
     update();
     draw();
-    setTimeout(() => { document.getElementById("confetti").style.visibility = "hidden" }, 2700);
+    setTimeout(() => { document.getElementById("confetti").style.visibility = "hidden" }, 3000);
 }
 
 function reStart() {
@@ -557,6 +557,7 @@ function done() {
         `Goodbye, ${userName}. I hope the weather is nice and you can enjoy it!\nGames Played: ${games}, Games Won: ${win}, Games Tied: ${tie}, Games Lost: ${lose}\n`);
 
     let feedbackbtn = document.createElement("button");
+feedbackbtn.style.cssText = "width: fit-content; padding: 1px 10px;";
     feedbackbtn.innerText = "Continue Play";
     feedbackbtn.addEventListener("click", start);
     document.getElementById("feedbackbar").append(feedbackbtn);
