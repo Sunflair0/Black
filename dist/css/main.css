@@ -1,5 +1,6 @@
 html {
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 body {
@@ -216,7 +217,7 @@ header {
   box-shadow: 4px 4px 5px black;
 }
 
-.position { 
+.position {
   margin-top: -109vh;
   -webkit-transform: translate(82vw, 18vh);
   transform: translate(82vw, 18vh);
@@ -233,7 +234,7 @@ aside {
   background-color: #222830;
   visibility: visible;
   position: relative;
-margin-bottom: 10vh;
+  margin-bottom: 10vh;
 }
 
 .curator {
@@ -641,7 +642,7 @@ table {
   font-variant: normal;
   font-size: clamp(18px, 3vw, 28px);
   padding-top: 7px;
-   margin: auto 0;
+  margin: auto 0;
 }
 
 section {
@@ -664,7 +665,7 @@ section {
 
   .flashy {
     height: 50px;
-    width: 50px;    
+    width: 50px;
   }
 
   .bar_adjust {
@@ -687,7 +688,7 @@ section {
 
   .feedbackbar {
     margin-top: 2vh;
-font-size: clamp(15px, 2vw, 46px);
+    font-size: clamp(15px, 2vw, 46px);
   }
 
   #games1,
