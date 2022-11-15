@@ -3,36 +3,37 @@ $primary-accent-color: #ffffff;
 $secondary-accent-color: #222830;
 
 body {
-    background-color: #c48c43;
+    background-color: #af6f1b;
     background-image: url(../asset/BJboard.png);
-    overflow-y: scroll;
-    overflow-x: hidden;
+    background-repeat: repeat no-repeat;
+    background-size: cover;
+    overflow: hidden;
     position: relative;
-    background-position: top;
-    background-repeat: repeat-x;
+    max-width: 100%;
+    height: 100vh;
+    top: 0;
 
     & button {
         height: 30px;
-        width: auto;
+        width: 50px;
         border-radius: 12px;
         border: 1px solid black;
         font-weight: bold;
-        z-index: 10;
         font-size: .9rem;
         color: $primary-accent-color;
         text-shadow: 1px 1px 1px #000;
-        background-color: rgba(253, 103, 103, 0.9);
+        background-color: #e65e5e;
         background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
         box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 1), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
         margin: auto;
         text-align: center;
-        justify-content: center;       
-
+        justify-content: center;
+        z-index: 60;
 
         &:hover {
-            background-color: rgba(248, 155, 155, 0.9);
-            cursor: pointer;
-            border-top: rgb(0, 0, 0) 2 solid;
+        background-color: rgba(206, 11, 11, 0.9);
+  cursor: pointer;
+  border-top: black 2 solid;
         }
 
         &:active {
@@ -108,14 +109,20 @@ body {
     transition: all .5s ease-in-out;
 }
 
-@mixin media-xs {
-    @media screen and (max-width: 540px) {
+@mixin media-xsw {
+    @media screen and (min-width: 450px) {
         @content;
     }
 }
 
 @mixin media-sm {
-    @media screen and (min-width: 541px) {
+    @media screen and (max-width: 541px) {
+        @content;
+    }
+}
+
+@mixin media-mdi {
+    @media screen and (min-width: 900px) {
         @content;
     }
 }
@@ -148,14 +155,15 @@ body {
     background: rgb(224, 195, 101);
     background: radial-gradient(circle at 50% 7px, rgb(0, 0, 0) 2.6%, rgba(224, 195, 101, 1) 0%, rgba(214, 210, 173, 1) 40%, rgb(172, 124, 41) 98%);
     color: $secondary-accent-color;
-    padding: 5px 5px 0px 5px;
-    border-radius: 5px;
-    border: double 5px;
-    margin: 0px;
-    text-align: center;
-    font-variant: small-caps;
-    font-family: 'Smokum', 'Veranda', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    height: 75%;
+      padding: 5px;
+  border-radius: 5px;
+  border: double 5px;
+  height: 75%;
+  width: 45px;
+  margin: 0px;
+  text-align: center;
+  font-variant: small-caps;
+  font-family: 'Smokum', 'Veranda', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
 }

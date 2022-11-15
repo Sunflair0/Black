@@ -2,53 +2,42 @@
 #games,
 #win,
 #tie {
-    color: black;   
-    padding: 0px;
+    color: black;
     border-radius: 10px;
-    border: double 5px;
-    margin: 0px auto 0px;
-    height: 50%;    
-    max-height: 95%;
-    max-width: 95%;
-    text-align: center;
-    justify-items: center;
-}
-    #games1{
-        letter-spacing: 0px;
-        @include scoreFlip;
-    } 
-    #lose1 {
-        letter-spacing: 1px;
-        @include scoreFlip;
-    }
-    #tie1, #win1 {
-        letter-spacing: 2px;
-        @include scoreFlip;
-    }
+    border: double 5px black;
+    margin-bottom: 2px;
 
-#scoreBox
-{
-    text-align: center;
-    display: flex;   
-    margin-top: calc(-5vh + 0px);
-    position: absolute;
-    visibility: hidden;
-    font-family: 'Smokum','Courier New', Courier, monospace, regular;
-    height: 110px;      
-}  
+}
+
+#games1 {
+    letter-spacing: 0px;
+    @include scoreFlip;
+}
+
+#lose1 {
+    letter-spacing: 1px;
+    @include scoreFlip;
+}
+
+#tie1,
+#win1 {
+    letter-spacing: 2px;
+    @include scoreFlip;
+}
+
 .deck__count__box {
     display: flex;
     position: absolute;
     height: 52px;
     width: 50px;
     color: black;
-    background: $primary-color;
+    background: #dacda5;
     border: black double 5px;
     border-radius: 10px;
-    margin-top: 20vh;    
+    margin-top: 20vh;
     z-index: 300;
     text-align: center;
-    font-family: 'Smokum','Veranda', sans-serif;
+    font-family: 'Smokum', 'Veranda', sans-serif;
     font-size: 30px;
     font-weight: 700;
 }

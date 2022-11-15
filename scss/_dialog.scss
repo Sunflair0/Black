@@ -1,37 +1,43 @@
-#feedbackbar {
-    font-family: 'Lora','Gill Sans', 'Gill Sans MT', sans-serif, regular;
+.feedbackbar {
+    font-family: 'Lora', 'Gill Sans', 'Gill Sans MT', sans-serif, regular;
     letter-spacing: -.05rem;
     visibility: visible;
-    margin: 6vh 14% 0 14%;
+    margin-top: -1vh;
     text-align: center;
-    background: $primary-color;
+    background: #dacda5;
     padding: 10px;
     border-radius: 5px;
     border: double 5px;
-    height: auto;    
-    font-size: 2.5vh;
-    z-index: 300; 
-    overflow: -moz-hidden-unscrollable;     
-    
+    height: auto;
+    font-size: 14px;
+    z-index: 50;
+    overflow: -moz-hidden-unscrollable;
+
     &::-webkit-scrollbar {
         display: none;
     }
 }
-#feedbackbutton::-webkit-scrollbar 
-{
+
+#feedbackbutton::-webkit-scrollbar {
     display: none;
 }
-#bday {   
-    padding-left: 10px;   
+
+.bar_adjust {
+    margin-left: 12vw;
+    margin-top: -1vh;
 }
-#birthday__input 
-{
+
+#bday {
+    padding-left: 10px;
+}
+
+#birthday__input {
     visibility: hidden;
     border: 1px solid $primary-color;
     margin: .3vh auto -6vh;
-    
     z-index: 100;
 }
+
 #date {
     background: #0084ff;
     border: none;
@@ -39,22 +45,22 @@
     cursor: pointer;
     color: $secondary-accent-color;
 }
-form 
-{
+
+form {
     height: 6vh;
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     padding: 2px;
-    
+
 }
-input 
-{
+
+input {
     z-index: 200;
     width: 50%;
     border: none;
     font-size: 1rem;
 
-        &:focus {
-        outline:none ;
+    &:focus {
+        outline: none;
     }
 }

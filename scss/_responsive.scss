@@ -1,41 +1,79 @@
-@include media-xs {
-    .title {
-        letter-spacing: .1px !important;
-        font-size: 2.7rem;       
-        margin-bottom: -1vh;
-        margin-top: 3.2rem;
+@include media-xsw {
+  .flashy {
+    height: 50px;
+    width: 50px;
+  }
 
-            &::first-letter {
-                font-size: 3.2rem;                
-            }      
-            .lowercase {
-                font-size: 1.3rem;
-                margin-bottom: -1.9vh;
-            }
-    }
-    .label {
-        transform: scale(1.2);
-        margin-left: auto;
-        margin-right: 10px;
-    }
-    #scoreBox {
-        flex-direction: row;
-        min-height: 110px;       
-    }
- 
-    #feedbackbar {
-        margin: 0;
-        margin-top: 1;
-    }   
-    .start {
-        margin: -5vh 0 0 -5vh;
-        width: 100px;
-    }  
-    #deckcount {
-        height: 35px;
-        width: 35px;
-        font-size: 20px;
-    }
+  .bar_adjust {
+    margin-left: 6.5vw;
+    margin-top: 3vh;
+  }
+}
+
+@include media-sm {
+  .deckcount {
+    font-weight: 700;
+    font-size: clamp(18px, 3vh, 35px);
+  }
+
+  #ccd {
+    margin-top: -125vh;
+    margin-left: 14%;
+  }
+
+  .feedbackbar {
+    margin-top: 2vh;
+    font-size: clamp(15px, 2vw, 46px);
+  }
+
+  #games1,
+  #lose1,
+  #tie1,
+  #win1 {
+    padding: 3px;
+    background: radial-gradient(circle at 50% 7px, black 3.6%, #e0c365 0%, #d6d2ad 40%, #ac7c29 98%);
+    width: 60px;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .bar_adjust {
+    margin-left: 6.5vw;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  .label {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .start {
+    width: 150px;
+    margin: -5vh 17vh 0 0;
+  }
+
+  #btnHit,
+  #btnStay {
+    width: 63px;
+    height: 63px;
+    font-size: 1rem;
+  }
+
+  #btnPlay {
+    margin-right: -15.5vh;
+    margin-left: 15.5vh;
+  }
+
+  .position {
+    -webkit-transform: translate(77vw, 18vh);
+    transform: translate(77vw, 18vh);
+  }
 }
 @include media-sm {
     input {
@@ -109,160 +147,96 @@
         width: auto;
     }
 }
-@include media-md {
-    #scoreBox {
-        margin-top: -3.5vh;
-        height: 110px;
-    }
-    #feedbackbar {
-        margin-top: 5.5vh;
-     }
-.title {
-    font-size: 3rem;
-    margin-bottom: 4.5vh;
-    margin-top: -.5vh;
+@include media-mdi {
+     section {
+    margin-top: 15vh;
+  }
 
-      &::first-letter {
-        font-size: 3.5rem;
-        }
-    }
-.lowercase {
-    font-size: 2rem;
-    margin-bottom: -1.2vh;
-}
-#games1, #lose1, #tie1, #win1 {
-    padding: 5px 10px 0px 10px;
-    background: radial-gradient(circle at 50% 7px, rgb(0, 0, 0) 3.6%,rgba(224,195,101,1) 0%, rgba(214,210,173,1) 40%, rgb(172, 124, 41) 98%);
-    font-size: 30px;
-    height: 100%;     
-    font-weight: 800;
-}
-#deck__line{
+  .scoreBox {
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  #ccd {
+    margin-top: -130vh;
+    margin-left: 0%;
+  }
+
+  .bar_adjust {
+    margin-left: 0;
     margin-top: 9vh;
+  }
 }
-.card-size img {
-    margin: 1vh;
-    min-height: 160px;
-    min-width: 111px;
-    box-shadow: 4px 4px 5px black;
-}
+@include media-md {
 
-.start {
+  .start {
     width: 150px;
     margin: -5vh 17vh 0 0;
-}
-.position {
-        transform: translate(85vw,9vh);
-        margin-right: -20%;
-    }
-    #deckcount {
-        height: 50px;
-        width: 50px;
-        font-size: 30px;
-        transform: translate(0,250%);
-    }
-    section {
-        margin-top:  -20%;
-    }
-}
-@include media-lg {
-    #feedbackbar {
-        margin-top: -3.5vh;
-    }
-    #scoreBox {
-       margin-top: -4vh;
-    }
-    .title {
-        font-size: 5.5rem;
-        margin-top: -1.5vh;
+  }
 
-            &::first-letter {
-                font-size: 6.5rem;
-        }
-    }
-    .lowercase {
-        font-size: 2.5rem;
-        margin-bottom: -4.2vh;
-    }
-
-    #scoreBox {
-        flex-direction: row;
-        margin-top: -3vh;
-    }
-    #ccd, #ucd, #bday {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-    #deck__line{
-        width: 100%;
-    }
-    #deckcount {
-        height: 52px;
-        width: 50px;
-        font-size: 30px;
-        transform: translate(20%,230%);
-    }
+  .position {
+    -webkit-transform: translate(85vw, 9vh);
+    transform: translate(85vw, 9vh);
+    margin-right: -20%;
+  }
 }
 @include media-nest {
-  
-    #feedbackbar {
-        margin-top: -4.5vh;
-    }
-    #scoreBox {
-        flex-direction: column;
-        margin-top: -5vh;
-    }
-    #btnPlay {
-        margin-left: 30vh;
-        width: 150px;
-    }
-    #ccd, #ucd {
-        margin-left: 10%;
-        margin-right: 20%;
-    }
-    .position {
-        transform: translate(87.5vw,10vh);
-    }
-    #lose1,
-    #games1,
-    #win1,
-    #tie1 {
-        text-align: center;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    #ccd
-    {
-    margin-top: -133vh;
-        }
-    #ucd 
-    {
-    margin-top: -103vh;
-        }
-    }
-@include media-xl {
-    #feedbackbar {
-        margin-top: -3.5vh;
-    }
-    #scoreBox {
-       margin-top: -4vh;
-    }
-    .title {
-        font-size: 5.5rem;
-        margin-top: -1.5vh;
+  #btnPlay {
+    margin-left: 30vh;
+    width: 150px;
+  }
 
-            &::first-letter {
-                font-size: 6.5rem;
-        }
+  #ccd,
+  #ucd {
+    margin: -130vh 0 0;
+    width: 75%;
+  }
+
+  .position {
+    -webkit-transform: translate(87.5vw, 10vh);
+    transform: translate(87.5vw, 10vh);
+  }
+
+  #lose1,
+  #games1,
+  #win1,
+  #tie1 {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #ccd {
+    margin-top: -133vh;
+  }
+
+  #ucd {
+    margin-top: -103vh;
+  }
     }
-    .lowercase {
-        font-size: 2.5rem;
-        margin-bottom: -4.2vh;
-    }
-    #deckcount {
-        height: 52px;
-        width: 50px;
-        font-size: 30px;
-        transform: translate(20%,230%);
-}
-}
+// @include media-xl {
+//     #feedbackbar {
+//         margin-top: -3.5vh;
+//     }
+//     #scoreBox {
+//        margin-top: -4vh;
+//     }
+//     .title {
+//         font-size: 5.5rem;
+//         margin-top: -1.5vh;
+
+//             &::first-letter {
+//                 font-size: 6.5rem;
+//         }
+//     }
+//     .lowercase {
+//         font-size: 2.5rem;
+//         margin-bottom: -4.2vh;
+//     }
+//     #deckcount {
+//         height: 52px;
+//         width: 50px;
+//         font-size: 30px;
+//         transform: translate(20%,230%);
+// }
