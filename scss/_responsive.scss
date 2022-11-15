@@ -86,9 +86,14 @@
         margin-top: 15vh;
     }
 
-.hitstay {
-    margin-top: 15vh;
-}
+    .deckcount {
+        font-weight: 700;
+        font-size: clamp(18px, 3vh, 35px);
+    }
+
+    .hitstay {
+        margin-top: 15vh;
+    }
 
     .scoreBox {
         display: flex;
@@ -115,8 +120,6 @@
     }
 
     .position {
-        -webkit-transform: translate(85vw, 9vh);
-        transform: translate(85vw, 9vh);
         margin-right: -20%;
     }
 }
@@ -159,29 +162,3 @@
         margin-top: -103vh;
     }
 }
-
-// @include media-xl {
-//     #feedbackbar {
-//         margin-top: -3.5vh;
-//     }
-//     #scoreBox {
-//        margin-top: -4vh;
-//     }
-//     .title {
-//         font-size: 5.5rem;
-//         margin-top: -1.5vh;
-
-//             &::first-letter {
-//                 font-size: 6.5rem;
-//         }
-//     }
-//     .lowercase {
-//         font-size: 2.5rem;
-//         margin-bottom: -4.2vh;
-//     }
-//     #deckcount {
-//         height: 52px;
-//         width: 50px;
-//         font-size: 30px;
-//         transform: translate(20%,230%);
-// }

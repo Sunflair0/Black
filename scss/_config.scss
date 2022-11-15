@@ -2,6 +2,11 @@ $primary-color: rgb(218, 205, 165);
 $primary-accent-color: #ffffff;
 $secondary-accent-color: #222830;
 
+html {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
 body {
     background-color: #af6f1b;
     background-image: url(../asset/BJboard.png);
@@ -31,9 +36,9 @@ body {
         z-index: 60;
 
         &:hover {
-        background-color: rgba(206, 11, 11, 0.9);
-  cursor: pointer;
-  border-top: black 2 solid;
+            background-color: rgba(206, 11, 11, 0.9);
+            cursor: pointer;
+            border-top: black 2 solid;
         }
 
         &:active {
@@ -139,31 +144,19 @@ body {
     }
 }
 
-@mixin media-lg {
-    @media screen and (min-width: 1150px) {
-        @content;
-    }
-}
-
-@mixin media-xl {
-    @media screen and (min-width: 1600px) {
-        @content;
-    }
-}
-
 @mixin scoreFlip {
     background: rgb(224, 195, 101);
     background: radial-gradient(circle at 50% 7px, rgb(0, 0, 0) 2.6%, rgba(224, 195, 101, 1) 0%, rgba(214, 210, 173, 1) 40%, rgb(172, 124, 41) 98%);
     color: $secondary-accent-color;
-      padding: 5px;
-  border-radius: 5px;
-  border: double 5px;
-  height: 75%;
-  width: 45px;
-  margin: 0px;
-  text-align: center;
-  font-variant: small-caps;
-  font-family: 'Smokum', 'Veranda', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    border: double 5px;
+    height: 75%;
+    width: 45px;
+    margin: 0px;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: 'Smokum', 'Veranda', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }

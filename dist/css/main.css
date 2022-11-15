@@ -14,7 +14,6 @@ body {
   height: 100vh;
   top: 0;
 }
-
 body button {
   height: 30px;
   width: 50px;
@@ -738,9 +737,14 @@ section {
     margin-top: 15vh;
   }
 
-.hitstay {
+  .deckcount {
+    font-weight: 700;
+    font-size: clamp(18px, 3vh, 35px);
+  }
+
+  .hitstay {
     margin-top: 15vh;
-}
+  }
 
   .scoreBox {
     display: flex;
@@ -767,8 +771,6 @@ section {
   }
 
   .position {
-    -webkit-transform: translate(85vw, 9vh);
-    transform: translate(85vw, 9vh);
     margin-right: -20%;
   }
 }

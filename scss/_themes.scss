@@ -1,63 +1,67 @@
-.toggle { 
-  visibility: hidden;
-  margin-top: 3vh;
-  margin-bottom: 1vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.toggle {
+    visibility: hidden;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
-.checkbox {
-      opacity: 0;
-  width: fit-content;
-  position: absolute;
-  cursor: pointer;
 
-    &:checked + .label .ball {
+.checkbox {
+    opacity: 0;
+    width: fit-content;
+    position: absolute;
+    cursor: pointer;
+
+    &:checked+.label .ball {
         transform: translateX(24px);
         transition: .5s linear;
     }
 }
+
 .fa-moon {
     color: #ff9100;
 }
+
 .fa-lightbulb {
     color: #ffff00;
 }
-.label
-{
+
+.label {
     background: #222830;
-  -webkit-box-shadow: #222830 inset;
-  box-shadow: #222830 inset;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  border-radius: 50px;
-  position: relative;
-  padding: 5px;
-  height: 26px;
-  width: 50px;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  margin: auto;
-  cursor: pointer;
+    -webkit-box-shadow: #222830 inset;
+    box-shadow: #222830 inset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    margin: auto;
+    cursor: pointer;
 }
-.ball
-{   width: 22px;
+
+.ball {
+    width: 22px;
     height: 22px;
-    background: radial-gradient(circle at 50% 10px, rgb(182, 153, 59) 12%, 10%,rgb(0, 0, 0) 2%,rgba(209, 172, 38, 0.4) 20%,rgba(0, 0, 0, 0.3) 35%),
-                repeating-conic-gradient(black,rgb(224, 195, 101) 45deg);
+    background: radial-gradient(circle at 50% 10px, rgb(182, 153, 59) 12%, 10%, rgb(0, 0, 0) 2%, rgba(209, 172, 38, 0.4) 20%, rgba(0, 0, 0, 0.3) 35%),
+        repeating-conic-gradient(black, rgb(224, 195, 101) 45deg);
     position: absolute;
     top: 2px;
     left: 2px;
@@ -66,17 +70,17 @@
     outline: 2px solid rgb(151, 132, 69);
     border-radius: 50px;
     transform: rotate(-90deg);
-    transition: .3 linear;    
+    transition: .3 linear;
 
-    &::before{
-    content: "";
-    position: absolute;
-    outline-offset: 2px;
-    outline: 1px solid rgb(0, 0, 0);
-    border-radius: 50%;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;    
+    &::before {
+        content: "";
+        position: absolute;
+        outline-offset: 2px;
+        outline: 1px solid rgb(0, 0, 0);
+        border-radius: 50%;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
     }
 }

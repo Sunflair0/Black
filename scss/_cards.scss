@@ -1,55 +1,54 @@
 header {
-    height: 14.3vh;
+  height: 14.3vh;
 }
 
 .label__choice {
-    align-items: center;
+  align-items: center;
 
-    &:hover {
-        outline-offset: 2px;
-        outline: 2px dashed gold;
-        cursor: pointer;
-    }
+  &:hover {
+    outline-offset: 2px;
+    outline: 2px dashed gold;
+    cursor: pointer;
+  }
 }
 
 .center {
-    margin-left: 2vh;
+  margin-left: 2vh;
 }
 
 .chosenOne {
-    visibility: hidden;
-    display: flex;
-    position: relative;
-    z-index: -1;
+  visibility: hidden;
+  display: flex;
+  position: relative;
+  z-index: -1;
 }
 
-
 .deckcount {
-    visibility: hidden;
-    display: grid;
-    position: absolute;
-    -webkit-transform: translate(0px, -50px);
-    transform: translate(0px, -50px);
-    justify-content: center;
-    border: black double 5px;
-    border-radius: 25%;
-    padding: 0px .5%;
-    margin: auto;
-    background: rgb(224, 195, 101);
-    background: radial-gradient(circle at 50% 7px,
-            rgb(224, 195, 101) 2.6%,
-            rgba(224, 195, 101, 1) 0%,
-            rgba(214, 210, 173, 1) 47%,
-            rgb(172, 124, 41) 98%);
-    font-family: 'Smokum', 'Veranda', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    z-index: 300;
-    aspect-ratio: 3/1;
+  visibility: hidden;
+  display: grid;
+  position: absolute;
+  -webkit-transform: translate(0px, -50px);
+  transform: translate(0px, -50px);
+  justify-content: center;
+  border: black double 5px;
+  border-radius: 25%;
+  padding: 0px .5%;
+  margin: auto;
+  background: rgb(224, 195, 101);
+  background: radial-gradient(circle at 50% 7px,
+      rgb(224, 195, 101) 2.6%,
+      rgba(224, 195, 101, 1) 0%,
+      rgba(214, 210, 173, 1) 47%,
+      rgb(172, 124, 41) 98%);
+  font-family: 'Smokum', 'Veranda', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  z-index: 300;
+  aspect-ratio: 3/1;
 }
 
 .scoreBox {
-    display: flex;
+  display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
@@ -59,7 +58,7 @@ header {
 }
 
 #ccd {
-     display: -webkit-box;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-preferred-size: min-content;
