@@ -167,7 +167,7 @@ header {
 }
 
 .card-face-border-outline {
-  padding: 1%;
+  padding: 0.7%;
   background: white;
   margin-right: 4px;
 }
@@ -520,7 +520,7 @@ input:focus {
 
 @media screen and (min-width: 450px) {
   .title {
-    font-size: clamp(30px, 9vw, 65px);
+    font-size: clamp(30px, 7vw, 65px);
     bottom: 2vh;
   }
   #ccd {
@@ -547,7 +547,7 @@ input:focus {
     transform: scale(1.2);
   }
   .title {
-    bottom: 3vh;
+    bottom: 0vh;
   }
   .deckcount {
     font-weight: 700;

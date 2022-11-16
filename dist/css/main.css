@@ -209,7 +209,7 @@ header {
 }
 
 .card-face-border-outline {
-  padding: 1%;
+  padding: .7%;
   background: #ffffff;
   margin-right: 4px;
 }
@@ -655,7 +655,7 @@ section {
 @media screen and (min-width: 450px) {
 
   .title {
-    font-size: clamp(30px, 9vw, 65px);
+    font-size: clamp(30px, 7vw, 65px);
     bottom: 2vh;
   }
 
@@ -691,7 +691,7 @@ section {
   }
 
   .title {
-    bottom: 3vh;
+    bottom: 0vh;
   }
 
   .deckcount {
