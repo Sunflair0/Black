@@ -547,7 +547,7 @@ input:focus {
     transform: scale(1.2);
   }
   .title {
-    bottom: 0vh;
+    bottom: 3vh;
   }
   .deckcount {
     font-weight: 700;
