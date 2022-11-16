@@ -125,7 +125,7 @@ header {
   background: radial-gradient(circle at 50% 7px, rgb(224, 195, 101) 2.6%, rgb(224, 195, 101) 0%, rgb(214, 210, 173) 47%, rgb(172, 124, 41) 98%);
   font-family: "Smokum", "Veranda", sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   z-index: 300;
   aspect-ratio: 3/1;
 }
