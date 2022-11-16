@@ -145,7 +145,7 @@ header {
   flex-direction: row;
   flex-flow: row wrap;
   position: absolute;
-  margin-top: -129vh;
+  margin-top: -127vh;
   margin-left: 19%;
   width: 55%;
 }
@@ -163,7 +163,13 @@ header {
 .card-size img {
   aspect-ratio: 2/3;
   width: min(100px, 15vw, 300px);
-  box-shadow: 4px 4px 5px black;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.7098039216);
+}
+
+.card-face-border-outline {
+  padding: 1%;
+  background: white;
+  margin-right: 4px;
 }
 
 .position {

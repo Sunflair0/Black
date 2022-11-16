@@ -249,6 +249,7 @@ function displayPlayerCards() {
     document.getElementById("ucd").innerHTML = "";
     for (let i = 0; i < playerHand.length; i++) {
         let playercard = document.createElement("img");
+        playercard.classList.add('card-face-border-outline');
         playercard.src = `./asset/cards/${playerHand[i].suite}${playerHand[i].face}.png`;
         let ucd = document.getElementById("ucd");
         ucd.append(playercard);
@@ -257,6 +258,7 @@ function displayPlayerCards() {
 
 function preHoleCard() {
     let compcard0 = document.createElement("img");
+    compcard0.classList.add('card-face-border-outline');
     compcard0.src = `./asset/cards/${computerHand[0].suite}${computerHand[0].face}.png`;
     let ccd0 = document.getElementById("ccd");
     ccd0.append(compcard0);
@@ -271,6 +273,7 @@ function displayCompCards() {
     document.getElementById("ccd").innerHTML = "";
     for (let i = 0; i < computerHand.length; i++) {
         let compcard = document.createElement("img");
+        compcard.classList.add('card-face-border-outline');
         compcard.src = `./asset/cards/${computerHand[i].suite}${computerHand[i].face}.png`;
         let ccd = document.getElementById("ccd");
         ccd.append(compcard);

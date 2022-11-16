@@ -132,7 +132,6 @@ header {
   visibility: hidden;
   display: flex;
   position: relative;
-  z-index: -1;
 }
 
 
@@ -180,7 +179,7 @@ header {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: absolute;
-  margin-top: -129vh;
+  margin-top: -127vh;
   margin-left: 19%;
   width: 55%;
 }
@@ -205,8 +204,14 @@ header {
 .card-size img {
   aspect-ratio: 2/3;
   width: min(100px, 15vw, 300px);
-  -webkit-box-shadow: 4px 4px 5px black;
-  box-shadow: 4px 4px 5px black;
+  -webkit-box-shadow: 3px 4px 4px #000000b5;
+  box-shadow: 3px 4px 4px #000000b5;
+}
+
+.card-face-border-outline {
+  padding: 1%;
+  background: #ffffff;
+  margin-right: 4px;
 }
 
 .position {
@@ -678,8 +683,6 @@ section {
 
   .card-size img {
     width: min(100px, 13vw, 300px);
-    border: rgb(255, 255, 255) 2px solid;
-    z-index: -1;
   }
 
   .label {
