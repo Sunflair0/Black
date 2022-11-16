@@ -554,7 +554,7 @@ input:focus {
     font-size: clamp(18px, 2vh, 35px);
   }
   #ccd {
-    margin-top: -140vh;
+    margin-top: -136vh;
     margin-left: 14%;
   }
   #ucd {
