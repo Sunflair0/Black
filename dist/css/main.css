@@ -217,6 +217,7 @@ header {
 .indicator_card_onStart {
   margin-top: -11vh;
   margin-left: -8vw;
+  width: min-content;
 }
 
 .bouncer {
@@ -677,6 +678,8 @@ section {
 
   .card-size img {
     width: min(100px, 13vw, 300px);
+    border: rgb(255, 255, 255) 2px solid;
+    z-index: -1;
   }
 
   .label {

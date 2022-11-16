@@ -173,6 +173,9 @@ header {
 .indicator_card_onStart {
   margin-top: -11vh;
   margin-left: -8vw;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .bouncer {
