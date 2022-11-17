@@ -157,13 +157,18 @@ header {
   flex-flow: row wrap;
   position: absolute;
   margin-top: -87vh;
-  width: 102%;
+  margin-left: 1%;
+  width: 100%;
 }
 
 .card-size img {
   aspect-ratio: 2/3;
   width: min(100px, 15vw, 300px);
   box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.7098039216);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .card-face-border-outline {

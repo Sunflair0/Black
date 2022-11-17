@@ -89,7 +89,8 @@ header {
   flex-flow: row wrap;
   position: absolute;
   margin-top: -87vh;
-  width: 102%;
+  margin-left: 1%;
+  width: 100%;
 }
 
 .card-size img {
@@ -97,6 +98,7 @@ header {
   width: min(100px, 15vw, 300px);
   -webkit-box-shadow: 3px 4px 4px #000000b5;
   box-shadow: 3px 4px 4px #000000b5;
+  user-select: none;
 }
 
 .card-face-border-outline {
