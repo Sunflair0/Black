@@ -182,6 +182,7 @@ header {
   margin-top: -127vh;
   margin-left: 19%;
   width: 55%;
+  gap: 4px;
 }
 
 #ucd {
@@ -200,6 +201,7 @@ header {
   margin-top: -87vh;
   margin-left: 1%;
   width: 100%;
+  gap: 4px;
 }
 
 .card-size img {
@@ -213,8 +215,6 @@ header {
 .card-face-border-outline {
   padding: .7%;
   background: #ffffff;
-  margin-right: 4px;
-  margin-bottom: 4px;
 }
 
 .position {
