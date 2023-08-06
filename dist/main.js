@@ -555,6 +555,7 @@ function reStart() {
     document.getElementById("feedbackbar").append(feedbackbtn);
 }
 
+
 function done() {
     document.getElementById("btnPlay").style.visibility = "hidden";
     statusMessage(
